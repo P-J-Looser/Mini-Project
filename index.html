@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="login">
+        
+        <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login1()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        
+        </div>
+        <div class="social-icons">
+            <img src="img/fb.png" alt="no img">
+            <img src="img/tw.jpg" alt="no img">
+            <img src="img/gp.png" alt="no img">
+        </div>
+        <form id="login1" class="input"><span>
+            <i class="fa-solid fa-user"></i></span>
+            <input type="text" class="input-field" placeholder="User Id" required><br>
+            <span >   
+                <i class="fa-solid fa-key"></i>
+        </span>
+            <input type="password" class="input-field" placeholder="Enter Password" id="_input" required>
+           
+            <span class="eye" onclick="fun()">
+            <i id="hide1" class="fa-solid fa-eye"></i>
+            <i id="hide2" class="fa-solid fa-eye-slash"></i></span>
+            <br>
+            <input type="checkbox" class="checkbox"><span>Remember password</span>
+ 
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input">
+            <span>
+                <i class="fa-solid fa-user"></i>
+            </span>
+            <input type="text" class="input-field" placeholder="User Id" required><br>
+            <span>
+            <i class="fa-solid fa-envelope"></i>
+        </span>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <br>
+            <span >   
+                <i class="fa-solid fa-key"></i>
+        </span>
+            <input type="password" class="input-field" placeholder="Create Password" id="_input2"required >
+            <span class="eye1" onclick="fun1()">
+            <i id="hide11" class="fa-solid fa-eye"></i>
+            <i id="hide22" class="fa-solid fa-eye-slash"></i>
+        </span>
+            <br>
+            
+            <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById("login1");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btn");
+        function register()
+        {
+            x.style.left="-400px"
+            y.style.left="50px"
+            z.style.left="110px";
+
+        }
+        function login1()
+        {
+            x.style.left="50px"
+            y.style.left="400px"
+            z.style.left="0";
+
+        }
+        function fun()
+        {
+            var a=document.getElementById("_input");
+            var b=document.getElementById("hide2");
+            var c=document.getElementById("hide1");
+            if(a.type === 'password')
+            {
+              a.type="text";
+              b.style.display="block";
+              c.style.display="none";
+            }
+            else
+            {
+                a.type="password";
+              b.style.display="none";
+              c.style.display="block";
+            }
+        }
+        function fun1()
+        {
+            var a1=document.getElementById("_input2");
+            var b1=document.getElementById("hide22");
+            var c1=document.getElementById("hide11");
+            if(a1.type === 'password')
+            {
+              a1.type="text";
+              b1.style.display="block";
+              c1.style.display="none";
+            }
+            else
+            {
+                a1.type="password";
+              b1.style.display="none";
+              c1.style.display="block";
+            }
+        }
+       
+       
+    </script>
+</body>
+</html>
