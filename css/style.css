@@ -20,6 +20,7 @@
     background: #fff;
     padding: 0.3125rem;
     overflow: hidden;
+    border-radius: 3%;
 }
 .button-box{
     width: 13.75rem;
