@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.login{
+    width: 100%;
+    height: 100%;
+  
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../img/bgim.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 23.75rem;
+    height: 30rem;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 0.3125rem;
+    overflow: hidden;
+}
+.button-box{
+    width: 13.75rem;
+    margin: 2.1875rem auto;
+    position: relative;
+    box-shadow: 0 0 1.25rem 0.5625rem #ff61241f;
+    border-radius: 1.875rem;
+}
+.toggle-btn{
+    padding: 0.625rem 1.875rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 6.875rem;
+    height: 100%;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius: 1.875rem;
+    transition: .5s;
+}
+.social-icons
+{
+    margin: 1.875rem auto;
+    text-align: center;
+
+}
+
+.social-icons img
+{
+  width: 1.875rem;
+  margin: 0 0.75rem;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 1.25rem 0 #7f7f7f3d;
+ 
+}
+.social-icons img:hover{
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+.input{
+    top: 11.25rem;
+    position: absolute;
+    width: 17.5rem;
+    transition: .5s;
+   
+
+}
+.input-field{
+    height: 100%;
+    padding: 0.625rem 0;
+    margin: 0.3125rem 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0.0625rem solid #9999;
+    outline: none;
+    background: transparent;
+    
+}
+.submit-btn{
+    width: 85%;
+    padding: 0.625rem 1.875rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 1.875rem;
+}
+.checkbox{
+    margin: 1.875rem 0.625rem 1.875rem 0;
+    
+    
+}
+span{
+    color: #777;
+    font-size: 0.875rem;
+    bottom: auto;
+    position: relative;
+}
+
+#login1{
+    left: 3.125rem;
+}
+#register{
+    left: 28.125rem;
+}
+.eye{
+  cursor: pointer;
+  position: absolute;
+  bottom: 7.625rem;
+}
+#hide2{
+    display: none;
+}
+.eye1{
+    cursor: pointer;
+    position: absolute;
+    bottom: 7.625rem;
+  }
+  #hide22{
+      display: none;
+  }
